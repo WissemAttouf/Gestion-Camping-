@@ -4,3 +4,13 @@ target/
 *.iml
 .env
 application-local.properties
+
+# Local environment and secret files
+.env.*
+!.env.example
+auth.json
+composer/auth.json
+*.pem
+*.key
+*.p12
+*.pfx
