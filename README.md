@@ -18,58 +18,6 @@ Cette liste s’appuie sur les routes, contrôleurs, vues et migrations du proje
 
 ## 📸 Captures d’écran
 
-Découvrez ci-dessous les principales interfaces de l’application **Gestion Camping**.
-
-### Accueil et détails
-
-<p align="center">
-  <img src="docs/images/acceuil.PNG" alt="Page d’accueil de l’application Gestion Camping" width="800">
-</p>
-
-<p align="center"><em>Page d’accueil</em></p>
-
-<p align="center">
-  <img src="docs/images/details.PNG" alt="Page de détails d’un élément du camping" width="800">
-</p>
-
-<p align="center"><em>Détails</em></p>
-
-### Inscription
-
-<p align="center">
-  <img src="docs/images/inscr.PNG" alt="Interface d’inscription" width="800">
-</p>
-
-<p align="center"><em>Inscription — aperçu 1</em></p>
-
-<p align="center">
-  <img src="docs/images/inscription.PNG" alt="Formulaire d’inscription" width="800">
-</p>
-
-<p align="center"><em>Inscription — aperçu 2</em></p>
-
-### Réservations
-
-<p align="center">
-  <img src="docs/images/reserv.PNG" alt="Interface de réservation" width="800">
-</p>
-
-<p align="center"><em>Réservations — aperçu 1</em></p>
-
-<p align="center">
-  <img src="docs/images/reserv1.PNG" alt="Vue complémentaire des réservations" width="800">
-</p>
-
-<p align="center"><em>Réservations — aperçu 2</em></p>
-
-### Profil utilisateur
-
-<p align="center">
-  <img src="docs/images/pprofil.PNG" alt="Page de profil utilisateur" width="800">
-</p>
-
-<p align="center"><em>Profil utilisateur</em></p>
-
 ## Technologies
 
 - **Backend :** PHP, Laravel 5.7
@@ -163,3 +111,49 @@ Lorsque les fichiers requis et les dépendances sont en place, utilisez la comma
 Projet réalisé dans le cadre de mon parcours en développement web.
 
 [GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
+
+---
+
+## 📸 Captures d’écran
+
+<p align="center">
+  <img src="docs/images/acceuil.PNG" alt="Accueil — Gestion-Camping-" width="800">
+  <br><strong>Accueil</strong>
+  <br><em>Page d’accueil de l’application Gestion Camping.</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/details.PNG" alt="Détails — Gestion-Camping-" width="800">
+  <br><strong>Détails</strong>
+  <br><em>Vue détaillée d’un élément lié au camping.</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/inscr.PNG" alt="Inscription — aperçu 1 — Gestion-Camping-" width="800">
+  <br><strong>Inscription — aperçu 1</strong>
+  <br><em>Premier aperçu du parcours d’inscription.</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/inscription.PNG" alt="Inscription — aperçu 2 — Gestion-Camping-" width="800">
+  <br><strong>Inscription — aperçu 2</strong>
+  <br><em>Vue complémentaire du formulaire d’inscription.</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/reserv.PNG" alt="Réservations — aperçu 1 — Gestion-Camping-" width="800">
+  <br><strong>Réservations — aperçu 1</strong>
+  <br><em>Premier aperçu de l’interface de réservation.</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/reserv1.PNG" alt="Réservations — aperçu 2 — Gestion-Camping-" width="800">
+  <br><strong>Réservations — aperçu 2</strong>
+  <br><em>Vue complémentaire des réservations.</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/pprofil.PNG" alt="Profil utilisateur — Gestion-Camping-" width="800">
+  <br><strong>Profil utilisateur</strong>
+  <br><em>Page consacrée au profil utilisateur.</em>
+</p>
