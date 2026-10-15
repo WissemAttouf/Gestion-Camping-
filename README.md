@@ -103,14 +103,6 @@ Adaptez les valeurs à votre environnement. **Ne publiez jamais de fichier `.env
 
 Lorsque les fichiers requis et les dépendances sont en place, utilisez la commande Laravel adaptée à cette version et à l’environnement PHP installé. Vérifiez les migrations et les instructions propres au dépôt avant de lancer l’application.
 
-## Auteur
-
-**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
-Projet réalisé dans le cadre de mon parcours en développement web.
-
-[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
-
----
 
 ## 📸 Captures d’écran
 
@@ -155,3 +147,14 @@ Projet réalisé dans le cadre de mon parcours en développement web.
   <br><strong>Profil utilisateur</strong>
   <br><em>Page consacrée au profil utilisateur.</em>
 </p>
+
+---
+
+## Auteur
+
+**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
+Projet réalisé dans le cadre de mon parcours en développement web.
+
+[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
+
+---
