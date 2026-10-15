@@ -1,10 +1,10 @@
-# Gestion de camping — Application web Laravel
+# 💻 Gestion de camping — Application web Laravel
 
 Application web de gestion et de consultation des ressources liées à un camping, développée avec **PHP et Laravel**. Le projet couvre notamment les lieux, services, guides, visiteurs et réservations.
 
 > **État du projet :** le dépôt repose sur une version ancienne de Laravel (5.7). Avant toute utilisation, vérifiez les fichiers indispensables, les dépendances et la compatibilité de l’environnement. Dans l’archive analysée, les fichiers `artisan` et `.env.example` étaient absents ; confirmez leur présence dans votre copie locale.
 
-## Fonctionnalités repérées
+## ✨ Fonctionnalités repérées
 
 - Page d’accueil présentant les données liées aux lieux, services, visiteurs, guides et réservations.
 - Pages de consultation des lieux et des services.
@@ -16,7 +16,7 @@ Application web de gestion et de consultation des ressources liées à un campin
 
 Cette liste s’appuie sur les routes, contrôleurs, vues et migrations du projet. Le parcours complet de réservation, les règles de disponibilité, le paiement et les autorisations doivent être validés en exécutant l’application.
 
-## Technologies
+## 🛠️ Technologies
 
 - **Backend :** PHP, Laravel 5.7
 - **Administration :** Laravel CRUDbooster 5.4
@@ -24,7 +24,7 @@ Cette liste s’appuie sur les routes, contrôleurs, vues et migrations du proje
 - **Frontend :** Blade, Bootstrap 4, JavaScript, Sass, Laravel Mix
 - **Tests :** PHPUnit
 
-## Structure du projet
+## 🗂️ Structure du projet
 
 ```text
 Gestion-Camping-/
@@ -48,7 +48,7 @@ Gestion-Camping-/
 └── package.json
 ```
 
-## Prérequis
+## ⚙️ Prérequis
 
 - Version de PHP compatible avec Laravel 5.7 et les dépendances verrouillées.
 - Composer.
@@ -58,20 +58,20 @@ Gestion-Camping-/
 
 Laravel 5.7 n’est plus une version maintenue. Une mise à niveau et un audit des dépendances sont recommandés avant toute exposition publique.
 
-## Installation locale
+## ⚙️ Installation locale
 
-### 1. Cloner le dépôt
+### ⚙️ 1. Cloner le dépôt
 
 ```bash
 git clone https://github.com/WissemAttouf/Gestion-Camping-.git
 cd Gestion-Camping-
 ```
 
-### 2. Vérifier les fichiers requis
+### ➡️ 2. Vérifier les fichiers requis
 
 Une application Laravel contient normalement le fichier `artisan` et un modèle `.env.example`. S’ils sont absents, restaurez-les depuis une copie complète du projet avant de poursuivre.
 
-### 3. Installer les dépendances
+### ➡️ 3. Installer les dépendances
 
 ```bash
 composer install
@@ -79,7 +79,7 @@ composer install
 
 Si Composer signale une incompatibilité, vérifiez la version de PHP et les extensions requises plutôt que de contourner durablement les contrôles de plateforme.
 
-### 4. Configurer la base de données
+### ➡️ 4. Configurer la base de données
 
 Créez une base, par exemple `gestion_camping`, puis configurez les paramètres locaux dans `.env` lorsque ce fichier est disponible :
 
@@ -99,7 +99,7 @@ DB_PASSWORD=
 
 Adaptez les valeurs à votre environnement. **Ne publiez jamais de fichier `.env` ni d’identifiants réels.**
 
-### 5. Lancer l’application
+### ⚙️ 5. Lancer l’application
 
 Lorsque les fichiers requis et les dépendances sont en place, utilisez la commande Laravel adaptée à cette version et à l’environnement PHP installé. Vérifiez les migrations et les instructions propres au dépôt avant de lancer l’application.
 
@@ -150,7 +150,7 @@ Lorsque les fichiers requis et les dépendances sont en place, utilisez la comma
 
 ---
 
-## Auteur
+## 👨‍💻 Auteur
 
 **Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
 Projet réalisé dans le cadre de mon parcours en développement web.
