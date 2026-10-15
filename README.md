@@ -1,48 +1,47 @@
-# Gestion de camping
+# Gestion de camping — Application web Laravel
 
-Application web de gestion et de consultation de lieux de camping, développée avec Laravel. Le projet organise plusieurs ressources liées à l'activité : lieux, services, guides, visiteurs et réservations.
+Application web de gestion et de consultation des ressources liées à un camping, développée avec **PHP et Laravel**. Le projet couvre notamment les lieux, services, guides, visiteurs et réservations.
 
-> **État du projet :** cette documentation est basée sur l'archive fournie. Le projet utilise une version ancienne de Laravel (5.7) et doit être vérifié et mis à niveau avant toute mise en production. Dans l'archive analysée, les fichiers `artisan` et `.env.example` ne sont pas présents ; vérifiez qu'ils existent dans votre copie locale avant de suivre l'installation ci-dessous.
+> **État du projet :** le dépôt repose sur une version ancienne de Laravel (5.7). Avant toute utilisation, vérifiez les fichiers indispensables, les dépendances et la compatibilité de l’environnement. Dans l’archive analysée, les fichiers `artisan` et `.env.example` étaient absents ; confirmez leur présence dans votre copie locale.
 
-## Fonctionnalités repérées dans le code
+## Fonctionnalités repérées
 
-- Page d'accueil présentant des données issues des lieux, services, visiteurs, guides et réservations.
-- Pages de consultation des services et des lieux.
-- Pages liées aux guides et aux détails d'un guide.
-- Consultation d'une réservation à partir de son identifiant.
+- Page d’accueil présentant les données liées aux lieux, services, visiteurs, guides et réservations.
+- Pages de consultation des lieux et des services.
+- Pages de présentation et de détail des guides.
+- Consultation d’une réservation par identifiant.
 - Pages relatives aux visiteurs et aux réservations personnelles.
-- Gestion de contenu et interface d'administration basée sur **Laravel CRUDbooster**.
+- Interface d’administration basée sur Laravel CRUDbooster.
 - Ressources de données pour les villes, lieux, services, guides, visiteurs et réservations.
 
-Les fonctionnalités ci-dessus sont déduites des routes, contrôleurs, vues et migrations présentes. Le parcours complet de réservation, les règles de disponibilité, le paiement et les rôles doivent être validés en exécutant l'application.
+Cette liste s’appuie sur les routes, contrôleurs, vues et migrations du projet. Le parcours complet de réservation, les règles de disponibilité, le paiement et les autorisations doivent être validés en exécutant l’application.
 
 ## Technologies
 
 - **Backend :** PHP, Laravel 5.7
 - **Administration :** Laravel CRUDbooster 5.4
-- **Base de données :** MySQL/MariaDB (à configurer selon l'environnement)
-- **Frontend :** Blade, Bootstrap 4, Laravel Mix, Sass et JavaScript
-- **Tests :** PHPUnit (tests de démonstration présents dans `tests/`)
+- **Base de données :** MySQL / MariaDB, selon la configuration
+- **Frontend :** Blade, Bootstrap 4, JavaScript, Sass, Laravel Mix
+- **Tests :** PHPUnit
 
 ## Structure du projet
 
 ```text
-.
-├── app/
-│   └── Http/Controllers/   # Contrôleurs web et administration
+Gestion-Camping-/
+├── app/Http/Controllers/   # Contrôleurs web et administration
 ├── config/                # Configuration Laravel
 ├── database/
-│   ├── migrations/        # Schéma de base de données
+│   ├── migrations/        # Schéma de données
 │   ├── factories/
 │   └── seeds/             # Données de démonstration éventuelles
-├── public/                # Point d'entrée et ressources publiques
+├── public/                # Point d’entrée et ressources publiques
 ├── resources/
 │   ├── lang/              # Traductions
 │   ├── sass/              # Styles Sass
-│   └── views/              # Vues Blade
+│   └── views/             # Vues Blade
 ├── routes/
 │   ├── web.php            # Routes web
-│   └── api.php             # Route API d'exemple
+│   └── api.php             # Route API d’exemple
 ├── tests/                 # Tests PHPUnit
 ├── composer.json
 ├── composer.lock
@@ -51,50 +50,38 @@ Les fonctionnalités ci-dessus sont déduites des routes, contrôleurs, vues et 
 
 ## Prérequis
 
-Le projet repose sur une pile ancienne. Utilisez un environnement PHP et Composer compatible avec Laravel 5.7 et les dépendances verrouillées dans `composer.lock`. Vérifiez notamment la version de PHP requise par les extensions installées.
+- Version de PHP compatible avec Laravel 5.7 et les dépendances verrouillées.
+- Composer.
+- MySQL ou MariaDB.
+- Node.js et npm uniquement si les ressources frontend doivent être recompilées.
+- Git.
 
-Outils nécessaires :
-
-- PHP et les extensions requises par Laravel et les dépendances ;
-- Composer ;
-- MySQL ou MariaDB ;
-- Node.js et npm, uniquement si vous devez reconstruire les ressources frontend ;
-- Git, recommandé pour le suivi des modifications.
-
-> Laravel 5.7 n'est plus une version actuelle. Pour un usage public ou professionnel, planifiez une migration vers une version de Laravel maintenue et vérifiez les avis de sécurité de toutes les dépendances.
+Laravel 5.7 n’est plus une version maintenue. Une mise à niveau et un audit des dépendances sont recommandés avant toute exposition publique.
 
 ## Installation locale
 
-### 1. Récupérer le projet
+### 1. Cloner le dépôt
 
 ```bash
-git clone <URL_DU_DEPOT>
-cd <DOSSIER_DU_PROJET>
+git clone https://github.com/WissemAttouf/Gestion-Camping-.git
+cd Gestion-Camping-
 ```
 
-### 2. Vérifier les fichiers indispensables
+### 2. Vérifier les fichiers requis
 
-La racine Laravel doit normalement contenir le script `artisan` et un modèle de configuration `.env.example`. Si l'un d'eux manque, restaurez-le depuis la copie complète du projet avant de poursuivre.
+Une application Laravel contient normalement le fichier `artisan` et un modèle `.env.example`. S’ils sont absents, restaurez-les depuis une copie complète du projet avant de poursuivre.
 
-### 3. Installer les dépendances PHP
+### 3. Installer les dépendances
 
 ```bash
 composer install
 ```
 
-Si Composer signale une incompatibilité de version, n'utilisez pas `--ignore-platform-reqs` comme solution permanente. Vérifiez la version de PHP, les extensions et les contraintes de `composer.json`.
+Si Composer signale une incompatibilité, vérifiez la version de PHP et les extensions requises plutôt que de contourner durablement les contrôles de plateforme.
 
-### 4. Configurer l'environnement
+### 4. Configurer la base de données
 
-Lorsque `.env.example` est présent :
-
-```bash
-copy .env.example .env
-```
-
-Sous macOS/Linux, utilisez `cp .env.example .env`.
-
-Configurez au minimum les variables d'application et de base de données dans `.env` :
+Créez une base, par exemple `gestion_camping`, puis configurez les paramètres locaux dans `.env` lorsque ce fichier est disponible :
 
 ```dotenv
 APP_NAME="Gestion de camping"
@@ -110,99 +97,15 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Adaptez les valeurs à votre installation locale. **Ne publiez jamais le fichier `.env` ni de véritables identifiants.**
+Adaptez les valeurs à votre environnement. **Ne publiez jamais de fichier `.env` ni d’identifiants réels.**
 
-### 5. Créer la base de données
+### 5. Lancer l’application
 
-Créez une base de données vide, par exemple `gestion_camping`, dans MySQL/MariaDB. Puis, si le fichier `artisan` est présent :
-
-```bash
-php artisan key:generate
-php artisan migrate
-```
-
-Les migrations du projet définissent notamment les tables liées aux lieux, services, visiteurs et réservations. Vérifiez l'ordre des migrations et les contraintes de la base avant d'utiliser des données réelles.
-
-### 6. Construire les ressources frontend (si nécessaire)
-
-```bash
-npm install
-npm run development
-```
-
-Pour une compilation optimisée :
-
-```bash
-npm run production
-```
-
-### 7. Lancer le serveur local
-
-```bash
-php artisan serve
-```
-
-Ouvrez ensuite l'adresse indiquée dans le terminal, généralement `http://127.0.0.1:8000`.
-
-## Routes principales repérées
-
-Les routes suivantes sont déclarées dans `routes/web.php` :
-
-| URL | Usage apparent |
-|---|---|
-| `/` | Page d'accueil |
-| `/services` | Consultation des services |
-| `/guide` | Page liée aux guides |
-| `/lieux` | Page liée aux lieux |
-| `/visiteurs` | Page liée aux visiteurs |
-| `/detail_guide` | Détail d'un guide |
-| `/reservation` | Page de réservation |
-| `/checklieux` | Vérification liée aux lieux |
-| `/mes_reservations` | Réservations de l'utilisateur |
-
-Certaines pages utilisent un identifiant transmis en paramètre. Vérifiez les routes, la validation des entrées et les autorisations avant toute exposition publique.
-
-## Tests
-
-Les tests de démonstration se trouvent dans `tests/`. Après avoir confirmé que l'environnement est correctement installé, lancez :
-
-```bash
-vendor/bin/phpunit
-```
-
-ou, si le script `artisan` fonctionne :
-
-```bash
-php artisan test
-```
-
-Les tests actuellement présents semblent être des tests d'exemple. Ils ne suffisent pas à prouver que les réservations, les permissions, les validations et les opérations de gestion fonctionnent correctement. Ajoutez des tests métier avant de considérer le projet comme validé.
-
-## Sécurité et limites connues
-
-Avant tout déploiement :
-
-- remplacer toute clé d'application ou tout identifiant qui aurait été exposé ;
-- ne jamais committer `.env`, mots de passe, clés API ou données personnelles ;
-- désactiver le mode debug en production (`APP_DEBUG=false`) ;
-- protéger les routes d'administration et vérifier les autorisations côté serveur ;
-- valider toutes les entrées utilisateur et utiliser des requêtes paramétrées ;
-- vérifier les uploads de fichiers, leurs types, leurs tailles et leur emplacement ;
-- contrôler les dépendances anciennes et planifier la mise à niveau de Laravel ;
-- tester les migrations sur une base vide et sauvegarder les données avant toute mise à jour.
-
-## Contribution
-
-1. Créez une branche pour votre modification.
-2. Décrivez clairement le changement.
-3. Ajoutez ou mettez à jour les tests concernés.
-4. Vérifiez que les tests passent avant d'ouvrir une Pull Request.
+Lorsque les fichiers requis et les dépendances sont en place, utilisez la commande Laravel adaptée à cette version et à l’environnement PHP installé. Vérifiez les migrations et les instructions propres au dépôt avant de lancer l’application.
 
 ## Auteur
 
-**Wissem Attouf**  
-Projet académique / personnel de gestion de camping.
+**Wissem Attouf** — Ingénieur logiciel | Développeur Full Stack  
+Projet réalisé dans le cadre de mon parcours en développement web.
 
----
-
-*Documentation rédigée à partir des fichiers du dépôt fourni. Les fonctionnalités, règles métier, rôles et parcours complets doivent être confirmés par des tests de l'application.*
+[GitHub](https://github.com/WissemAttouf) · [LinkedIn](https://www.linkedin.com/in/wissem-attouf-452509226/) · [Portfolio](https://wissem-portfolio.vercel.app/) · [E-mail](mailto:wattouf35@gmail.com)
