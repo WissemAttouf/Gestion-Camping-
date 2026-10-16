@@ -1,6 +1,10 @@
 # 💻 Gestion de camping — Application web Laravel
 
-Application web de gestion et de consultation des ressources liées à un camping, développée avec **PHP et Laravel**. Le projet couvre notamment les lieux, services, guides, visiteurs et réservations.
+Application web de gestion et de consultation des ressources liées à un camping, développée avec **PHP et Laravel 5.7**. Le projet couvre notamment les lieux, services, guides, visiteurs et réservations.
+
+> **Contexte :** projet réalisé dans le cadre de mon stage de fin d’études chez **Sprint Code** (2022).
+>
+> **Résumé pour recruteurs :** expérience pratique en développement web avec Laravel, gestion des données MySQL/MariaDB et réalisation de fonctionnalités applicatives. L’état actuel du dépôt et les limites de compatibilité sont précisés ci-dessous.
 
 > **État du projet :** le dépôt repose sur une version ancienne de Laravel (5.7). Avant toute utilisation, vérifiez les fichiers indispensables, les dépendances et la compatibilité de l’environnement. Dans l’archive analysée, les fichiers `artisan` et `.env.example` étaient absents ; confirmez leur présence dans votre copie locale.
 
